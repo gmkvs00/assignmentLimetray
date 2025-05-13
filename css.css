@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    line-height: 1.6;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  .logo {
+    height: 40px;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .nav-links li a:hover {
+    color: #f0a500;
+  }
+  .slider {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+  }
+  .slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  .slide {
+    min-width: 100%;
+    transition: opacity 1s;
+    opacity: 0;
+  }
+  .slide.active {
+    opacity: 1;
+  }
+  .slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+  }
+  .slider-controls span {
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+  }
+  .about, .featured-menu {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .about-content img {
+    max-width: 300px;
+    border-radius: 12px;
+  }
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .menu-item {
+    max-width: 250px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 12px;
+    transition: transform 0.3s;
+  }
+  .menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .menu-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .footer-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  @media (min-width: 768px) {
+    .about-content {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
